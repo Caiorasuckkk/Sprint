@@ -1,26 +1,24 @@
-document.querySelector("#botao-cadastrar").addEventListener("click", () => {
-    // Pegar os valores dos inputs
-    const nome = document.querySelector("#nome").value;
-    const email = document.querySelector("#emails").value;
-    const senha = document.querySelector("#senhas").value;
-   
-    // Criar um objeto chamado jogador com esses valores
-    const Cliente = {
-        id: new Date().getTime(), 
-            nome: nome,
-           email: emails,
-            senha:senhas
-    
-        } 
-         // Recuperar o array de jogadores do localStorage (ou criar um novo array se estiver vazio)
-         const Clientes = JSON.parse(localStorage.getItem("Clientes")) || [];
+document.addEventListener('DOMContentLoaded', function() {
+    const formCadastro = document.getElementById('form-cadastro');
 
-         // Adicionar o novo jogador ao array
-         Clientes.push(Cliente);
- 
-         // Salvar o array atualizado no localStorage usando a chave "jogadores"
-         localStorage.setItem("Clientes", JSON.stringify(Clientes));
- 
-         // Redirecionar o usuário para a página inicial
-         window.location.href = "index.html";
-       });
+    formCadastro.addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
+
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('emails').value;
+        const senha = document.getElementById('senhas').value;
+
+        // Armazenar os dados no localStorage
+        localStorage.setItem('nome', nome);
+        localStorage.setItem('email', email);
+        localStorage.setItem('senha', senha);
+
+        // Redirecionar para a página "Acesso.html"
+        window.location.href = 'Acesso.html';
+    });
+
+    document.getElementById('botao-cancelar').addEventListener('click', function() {
+        // Limpar os campos do formulário
+        formCadastro.reset();
+    });
+});

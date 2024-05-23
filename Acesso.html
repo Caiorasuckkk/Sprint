@@ -1,97 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-     <script src="./assets/js/script.js" defer></script>
+    <title>Acesso</title>
+    <script defer src="assets/js/acesso.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
-<header>
-    
-    <img id="logo"  src=Assets\images\logo.jpg alt="Ocorreu um erro!">
-    <h1>Avaliapp</h1>
-
-
-</header>
 <body>
+    <header id="acesso-header">
+        <img id="logo" src="assets/images/logo.jpg" alt="Ocorreu um erro!">
+        <h1>Avaliapp</h1>
+        <div id="usuario-info"></div>
+        <button id="ver-pedidos">Ver meus pedidos</button>
+    </header>
     
     <div id="cabeçalho">
         <h2>Pedidos</h2>
-        
+    </div>
 
-     </div>
-   
     <section id="secao-planejamento">
-         
-        <h2>Faça aqui seu  Pedidos</h2>
+        <h2>Faça aqui seu Pedido</h2>
         
-        <form action="" >
+        <form id="form-pedido">
             <div class="demanda nome">
                 <label for="nome-projeto">Nome do projeto</label>
-                <input type="text" id="nome-projeto">
+                <input type="text" id="nome-projeto" required>
             </div>
-        
 
             <div class="demanda-tipo">
                 <label for="tipo">Qual modelo?</label>
-                <select id="tipo">
-                        <option value="1" selected>App-Todas as plataformas</option>
-                        <option value="2">App-Ios</option>
-                        <option value="3">App-Android</option>
-                        <option value="4">Software</option>
-                        <option value="5">Site</option>
-                        <option value="6">Completo</option>
-                       
-
+                <select id="tipo" required>
+                    <option value="App-Todas as plataformas" selected>App-Todas as plataformas</option>
+                    <option value="App-Ios">App-Ios</option>
+                    <option value="App-Android">App-Android</option>
+                    <option value="Software">Software</option>
+                    <option value="Site">Site</option>
+                    <option value="Completo">Completo</option>
                 </select>
             </div>
-            
+
             <div class="demanda-sobre">
                 <label for="sobre">Descreva sua empresa</label>
-                <input type="text" id="sobre">
+                <input type="text" id="sobre" required>
             </div>
 
             <div class="demanda-prazo">
                 <label for="prazo">Qual o prazo?</label>
-                <input type="date" id="prazo">
+                <input type="date" id="prazo" required>
             </div>
-           
-            
-
-
-
 
             <div class="Botao">
-                <button  id="botao-cancelar"role="button"  href="/index.html" class="outline">Cancelar</a>
-                <button id="botao-cadastrar">Enviar</button>
-            </div> 
-            <li><a href="/Index.html">Cadastrar</a></li>
-               
-              
-        
-
-            
-            
-
-
-
-        
-            
+                <button id="botao-cancelar"><a href="index.html">Cancelar</a></button>
+                <button type="submit" id="botao-cadastrar">Enviar</button>
+            </div>
         </form>
     </section>
 
-        
-        
-        
-        
-        
-        
-    
-    
-       
-   
-    
+    <section id="pedidos-section" style="display:none;">
+        <h2>Meus Pedidos</h2>
+        <div id="pedidos-lista"></div>
+    </section>
 </body>
 </html>
