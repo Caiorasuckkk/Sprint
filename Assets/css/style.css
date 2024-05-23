@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+:root {
+    --font-title: "Roboto", sans-serif;
+    --font-body:"Montserrat", sans-serif;
+}
+header {
+    height: 40vh;
+    display: flex;
+    justify-content: top; 
+    align-items: center; 
+    
+    
+}
+#logo{
+height: 240px;
+
+
+
+}
+
+header h1{
+    font-family: "Montserrat", sans-serif;
+
+     
+
+
+}
+#pedidos{
+    background-color: rgba(87, 170, 243, 0.63);
+    width: 40vh;
+    align-items: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 50px;
+    border-color: black;
+    
+  
+
+
+}
+#pedidos h2{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    
+
+}
+
+header::before{
+    content: "";
+    background-color: white;
+    background-size: contain;
+    height: 40vh;
+    width: 98vw;
+    display: block;
+    position: absolute;
+    z-index: -10;
+}
+body{
+background-color: #d8d8df48;
+
+
+}
+#cabeçalho{
+    margin-top: 50px;
+ 
+ 
+ 
+
+
+
+}
+#cabeçalho h3{
+margin-top: 30px;
+font-size: 17px;
+font-family: "Montserrat", sans-serif;
+
+
+}
+#cabeçalho h2{
+    background-color: rgba(52, 145, 226, 0.61);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    
+   
+    
+
+}
+#ideias{
+ background-color: rgba(52, 145, 226, 0.61);
+margin-top: 80px;
+text-align: center;
+margin-bottom: 40px;
+font-family: "Montserrat", sans-serif;
+font-size: 17px;
+
+
+
+}
+#propostas{
+    background-color: hsla(220, 1%, 58%, 0.459);
+    height: 75vh;
+    
+}
+#propostas ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+.card {
+    max-width: 300px;
+    height: 420px;
+    position: relative;
+    cursor: pointer;
+}
+
+.image-wrapper {
+    margin-top: 20px;
+  
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: opacity .5s;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-text {
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    top: 30%;
+    opacity: 0;
+    transition: opacity .5s, top .5s;
+}
+
+.card:hover .card-text {
+    opacity: 1;
+    top: 15%
+}
+
+.card:hover .image-wrapper{
+    opacity: .3;
+}
+#secao-planejamento {
+    height: 100vh;
+    padding: 3rem;
+    background-color: #F9EBEB;
+}
+
+#secao-planejamento h2{
+    font-family: var(--font-title);
+    text-align: center;
+   
+}  
+#secao-planejamento h3{
+    text-align: center;
+    font-family: var(--font-body);
+    
+}
+
+#secao-planejamento form{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 500px;
+    margin: 0 auto;
+    
+}
+
+.valores{
+
+font-size: larger;
+
+
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    grid-column: 2 / 3;
+}
+.valores{
+
+    background-color: #ebb1b1;
+    position: center;
+
+}
+
+input[type=range]
+{
+    accent-color: var(--color-destak);
+}
+#botao-cancelar{
+height: 6vh;
+margin-right: 10px;
+width: 12vh;
+
+}
+#botao-cadastrar{
+    height: 6vh;
+    margin-left: 10px;
+    width: 12vh;
+    
+    }
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+    
+
+
+
