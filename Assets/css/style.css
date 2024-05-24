@@ -5,7 +5,7 @@
     --font-body:"Montserrat", sans-serif;
 }
 header {
-    height: 40vh;
+    height: 100%;
     display: flex;
     justify-content: top; 
     align-items: center; 
@@ -30,8 +30,8 @@ header h1{
     background-color: rgba(87, 170, 243, 0.63);
     width: 40vh;
     align-items: center;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 50%;
+    margin-right: 50%;
     border-radius: 50px;
     border-color: black;
     
@@ -51,8 +51,8 @@ header::before{
     content: "";
     background-color: white;
     background-size: contain;
-    height: 40vh;
-    width: 98vw;
+    height: 100%;
+    width: 100%;
     display: block;
     position: absolute;
     z-index: -10;
@@ -101,7 +101,7 @@ font-size: 17px;
 }
 #propostas{
     background-color: hsla(220, 1%, 58%, 0.459);
-    height: 75vh;
+    height: 40%;
     
 }
 #propostas ul{
@@ -111,7 +111,7 @@ font-size: 17px;
 }
 
 .card {
-    max-width: 300px;
+    max-width: 95%;
     height: 420px;
     position: relative;
     cursor: pointer;
@@ -121,7 +121,7 @@ font-size: 17px;
     margin-top: 20px;
   
     width: 100%;
-    height: 100%;
+    height: 95%;
     overflow: hidden;
     transition: opacity .5s;
 }
@@ -169,7 +169,7 @@ font-size: 17px;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto;
     
 }
@@ -201,14 +201,14 @@ input[type=range]
 }
 #botao-cancelar{
 height: 6vh;
-margin-right: 10px;
-width: 12vh;
+margin-right: 5%;
+width: 25%;
 
 }
 #botao-cadastrar{
     height: 6vh;
-    margin-left: 10px;
-    width: 12vh;
+    margin-left: 2%;
+    width: 25%;
     
     }
 /* Estilos para a seção de visualização de pedidos */
